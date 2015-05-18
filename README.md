@@ -1,0 +1,2 @@
+# IsstaShareWord
+nothing more
