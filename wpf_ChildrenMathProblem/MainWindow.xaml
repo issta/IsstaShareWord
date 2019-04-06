@@ -1,0 +1,26 @@
+﻿<Window x:Class="ChildrenMathProblem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChildrenMathProblem"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="500" MinWidth="640" Height="500" Width="640">
+    <Grid>
+        <RichTextBox x:Name="rtxbProcedureInfo" HorizontalAlignment="Left" VerticalScrollBarVisibility="Auto" Height="339" Margin="10,120,0,0" VerticalAlignment="Top" Width="497">
+            <FlowDocument LineHeight="0.5">
+                <Paragraph Name="ParagraphTips">
+                    <Run Text="提示信息..."/>
+                </Paragraph>
+                <Paragraph Name="ParagraphResult">
+                    <Run Text="处理过程..."/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="txbCondition" HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" Margin="10,10,0,0"/>
+        <ProgressBar Name="pbProgressBar" HorizontalAlignment="Left" Height="20" Margin="10,95,0,0" VerticalAlignment="Top" Width="497"/>
+        <Button x:Name="btStartCalculate" Content="开始计算" HorizontalAlignment="Left" Margin="512,10,0,0" VerticalAlignment="Top" Width="110" Height="388" Click="BtStartCalculate_Click"/>
+        <Button Name="btnUserAbort" Content=" 取消" HorizontalAlignment="Left" Margin="512,403,0,0" VerticalAlignment="Top" Width="110" Height="56" IsEnabled="False" Click="BtnUserAbort_Click"/>
+
+    </Grid>
+</Window>
